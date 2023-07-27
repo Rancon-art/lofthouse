@@ -1,0 +1,168 @@
+.footer {
+	padding-top: 50px;
+	padding-bottom: 70px;
+	background-color: $footer-bg;
+	font-size: 14px;
+	letter-spacing: 0.05rem;
+
+	@include mediaTablet {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+.footer__grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+	@include mediaTablet {
+		grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+		gap: 40px 30px;
+	}
+}
+.footer__logo {
+	margin-top: -12px;
+	
+	}
+
+
+.footer__nav {
+	display: grid;
+
+	@include mediaTablet {
+			display: flex;
+			flex-direction: column;
+			//justify-content: center;
+			//align-items: center;
+	}
+}
+
+.footer__label {
+	display: flex;
+	margin-bottom: 30px;
+	font-size: 18px;
+	font-weight: 900;
+	position: relative;
+
+	@include mediaTablet {
+		font-size: 14px;
+		font-weight: 500;
+		//justify-content: center;
+	}
+	
+}
+
+.footer__label__active::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 20px;
+
+	display: block;
+	width: 40px;
+	height: 3px;
+	background-color: $accent;
+	border-radius: 0 5px 0 5px;
+
+	@include mediaTablet {
+		
+			//display: flex;
+			//justify-content: center;
+			//align-items: center;
+			
+	}
+}
+
+//.footer__label__active {
+	//@include mediaTablet {
+		//position: relative;
+		//padding: 0px 0px 0px 30px;
+	//	cursor: pointer;
+	//}
+	
+//}
+
+//.footer__label__active::before {
+	//@include mediaTablet {
+	//	content: '';
+	//	width: 10px;
+	//	height: 1px;
+	//	background-color: $accent;
+	//	position: absolute;
+	//	top: 8px;
+	//}
+//}
+/*
+.footer__label__active::after {
+	@include mediaTablet {
+		content: '';
+		width: 10px;
+		height: 1px;
+		background-color: $accent;
+		position: absolute;
+		top: 8px;
+	}
+}
+
+.footer__label__active::before {
+	@include mediaTablet {
+			transform: rotate(40deg);
+			left: 0;
+	}
+}
+
+.footer__label__active::after {
+	@include mediaTablet {
+		
+		transform: rotate(-40deg);
+		left: 8px;
+		
+	}
+}
+*/
+
+
+.footer__nav-list {
+	display: grid;
+	gap: 15px;
+	@include mediaTablet {
+			//display: flex;
+			//flex-direction: column;
+			//justify-content: center;
+			//align-items: center;
+			
+	}
+	
+}
+
+
+.footer__contacts {
+	display: grid;
+	gap: 20px;
+
+	@include mediaTablet {
+			//display: flex;
+			//flex-direction: column;
+			//justify-content: center;
+			//align-items: center;
+	}
+}
+
+.footer__cal {
+	font-weight: 400;
+	font-size: 14px;
+	margin-bottom: 30px;
+	letter-spacing: 0.05rem;
+	color: rgba(255, 255, 255, 0.7);
+	
+	}
+
+.footer__socials {
+	display: flex;
+	//flex-direction: row-reverse;
+	column-gap: 12px;
+	
+	
+}
+
+

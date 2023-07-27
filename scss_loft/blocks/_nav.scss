@@ -1,0 +1,29 @@
+.nav {
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	align-items: center;
+}
+
+.nav__list {
+	display: flex;
+	column-gap: 40px;
+}
+
+.nav__accent {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 7px 15px;
+	gap: 10px;
+	width: 94px;
+	height: 22.84px;
+	background: rgba(196, 196, 196, 0.3);
+	border-radius: 0px 5px;
+}
+
+.nav_icons:hover {
+	background-color: #F88500;
+	border-radius: 70px;
+	transition: background-color 0.2s ease-in;
+}
